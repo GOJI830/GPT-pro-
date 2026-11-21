@@ -1,0 +1,9 @@
+{
+  "name": "GPT Pro",
+  "short_name": "GPT Pro",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#10131d",
+  "theme_color": "#10131d",
+  "icons": []
+}

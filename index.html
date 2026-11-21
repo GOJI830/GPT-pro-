@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#10131d">
+  <meta name="description" content="GPT Pro — твій AI-помічник">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/style.css">
+  <title>GPT Pro</title>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><div class="logo">G</div><div><b>GPT Pro</b><small>AI Assistant · v0.1</small></div></div>
+      <button id="newChat" class="new-chat">＋ Нова розмова</button>
+      <div class="side-label">МОЖЛИВОСТІ</div>
+      <div class="feature">✦ Розумний чат</div>
+      <div class="feature">◉ Аналіз зображень</div>
+      <div class="feature">⌁ Голосовий ввід</div>
+      <div class="side-bottom"><span class="status-dot"></span><span id="statusText">Перевірка сервера…</span></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><button id="menuBtn" class="icon-btn mobile-only" aria-label="Меню">☰</button><div class="top-title">GPT Pro <span>PREVIEW</span></div><button id="clearBtn" class="icon-btn" title="Очистити історію">⌫</button></header>
+      <section id="chat" class="chat">
+        <div id="welcome" class="welcome">
+          <div class="welcome-logo">✦</div>
+          <h1>Привіт! Я GPT Pro.</h1>
+          <p>Твій власний AI-помічник. Про що поговоримо?</p>
+          <div class="suggestions">
+            <button class="suggestion">💻 Допоможи з програмуванням</button>
+            <button class="suggestion">📚 Поясни складну тему просто</button>
+            <button class="suggestion">🎮 Придумай ідею для гри</button>
+          </div>
+        </div>
+        <div id="messages" class="messages"></div>
+      </section>
+      <div class="composer-wrap">
+        <div id="imagePreview" class="image-preview"></div>
+        <form id="composer" class="composer">
+          <input id="imageInput" type="file" accept="image/*" hidden>
+          <button type="button" id="attachBtn" class="tool-btn" title="Додати зображення">＋</button>
+          <textarea id="prompt" rows="1" placeholder="Напиши повідомлення GPT Pro…" maxlength="8000"></textarea>
+          <button type="button" id="micBtn" class="tool-btn" title="Голосовий ввід">🎙</button>
+          <button id="sendBtn" class="send-btn" type="submit" aria-label="Надіслати">➤</button>
+        </form>
+        <div class="disclaimer">GPT Pro — незалежний демонстраційний проєкт. Відповіді AI можуть містити помилки.</div>
+      </div>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
